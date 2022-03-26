@@ -20,5 +20,17 @@ This was generated using Sparkov Data Generation | Github tool created by Brando
 * Work on the project on Monday and Wednesday together during or before class over zoom.
 * Meet again during the office hours to finish and review segment.   
 
+## Tableau Story
+
+*	Create a bar graph – Fraud and Non-fraud
+*	Create a graph depicting fraud done to women versus men
+*	Avg amount of fraud transaction
+*	Fraud transactions by category – to see if there is any correlation with certain categories
+*	Heat map by locations
+*	Most vulnerable age for cc fraud
+
+We want to show, with graphs, any patterns there may be. This will also be a great way to demonstrate what we were able to do with our machine learning model.  
+
+
 ## Summary
 
