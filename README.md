@@ -22,3 +22,7 @@ A cohesive toolset that includes bot detection, machine learning models, and beh
 
 ## Summary
 
+## Questions they hope to answer with the data
+1. When should the credit card companies shut off a card when it detects fraud?
+
+
