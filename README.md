@@ -34,3 +34,7 @@ We want to show, with graphs, any patterns there may be. This will also be a gre
 
 ## Summary
 
+## Questions they hope to answer with the data
+1. When should the credit card companies shut off a card when it detects fraud?
+2. What we are trying to accomplish through this data?
+3. Whiich age group are targeted by credit card fraud?
