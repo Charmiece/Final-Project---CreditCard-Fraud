@@ -28,3 +28,5 @@ A cohesive toolset that includes bot detection, machine learning models, and beh
 3. Whiich age group are targeted by credit card fraud?
 4. Is women targeted more than man?
 5. What locations frauds occur?
+6. What areas do the company need to pay attention to in order to catch the detection?
+7. what machine learning works the best?
