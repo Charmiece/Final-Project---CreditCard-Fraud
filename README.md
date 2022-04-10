@@ -42,3 +42,26 @@ We want to show, with graphs, any patterns there may be. This will also be a gre
 5. What locations frauds occur?
 6. What areas do the company need to pay attention to in order to catch the detection?
 7. What machine learning works the best?
+
+## Machine Learning Models
+
+#### Random Oversampling
+* The accuracy score was 87%. It matched with SMOTE and undersampling. 
+* It was a good model to run.
+
+
+#### SMOTE Oversampling
+* The accuracy score was 87%. It matched with Random oversampling and undersampling. 
+* It was a good model to run.
+
+
+#### Undersampling
+* The accuracy score was 87%. It matched with SMOTE and Random Oversampling. 
+* It was a good model to run.
+
+
+#### Combination (Over and Under) Sampling
+* The accuracy score was 50%.
+
+#### Balanced Random Forest Classifier
+* The accuracy score was 100%.
