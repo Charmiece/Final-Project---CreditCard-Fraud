@@ -89,15 +89,17 @@ This was generated using Sparkov Data Generation | Github tool created by Brando
 
 ![image](https://user-images.githubusercontent.com/93439516/162639180-37f574cd-e2c4-49bc-ba57-a4ee6a66de7b.png)
 
-## Tableau Story
+## Dashboard
 
-*	Create a bar graph – Fraud and Non-fraud
-*	Create a graph depicting fraud done to women versus men
-*	Avg amount of fraud transaction
-*	Fraud transactions by category – to see if there is any correlation with certain categories
+*	Compare fraud and non-fraud transactions
+*	Graph depicting fraud transactions for women versus men
+*	Fraud transactions by category
 *	Heat map by locations
-*	Most vulnerable age for cc fraud
+*	Most vulnerable age for credit card fraud
+![Dashboard page 1](https://user-images.githubusercontent.com/93438483/163690831-60de42fa-b391-4bb1-8332-5544c2781225.png)
+![Dashboard page 2](https://user-images.githubusercontent.com/93438483/163690441-080e97dc-ee5a-442b-8673-6237f2c1d816.png)
 
+Below is the link to the Dashboard:
 https://public.tableau.com/app/profile/charmiece.hollins/viz/CreditCardFraud-FinalProject/CreditCardFraudDetection
 
 ## Summary
