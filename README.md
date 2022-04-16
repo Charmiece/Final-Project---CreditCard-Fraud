@@ -132,8 +132,8 @@ Our results:
 ![Dashboard page 1](https://user-images.githubusercontent.com/93438483/163690831-60de42fa-b391-4bb1-8332-5544c2781225.png)
 ![Dashboard page 2](https://user-images.githubusercontent.com/93438483/163690441-080e97dc-ee5a-442b-8673-6237f2c1d816.png)
 
-Below is the link to the Dashboard:
-https://public.tableau.com/app/profile/charmiece.hollins/viz/CreditCardFraud-FinalProject/CreditCardFraudDetectionpg2
+
+[Link to Dashboard](https://public.tableau.com/app/profile/charmiece.hollins/viz/CreditCardFraud-FinalProject/CreditCardFraudDetectionpg2)
 
 ## Summary
 Our goal was to find a machine learning model that helped detect when credit card companies should shut off credit cards due to fraudulent activity. We use Balance Random Forest Classifier which gave us a 50% accuracy. This was not a good model due to the data showing less than 1% of the transactions being fraud. The second model we used was Logistic Regression. We preformed SMOTE, Combination (SMOTEEN), Undersampling and Random Oversampler. Logistic Regression with SMOTE preprocessing was our most accurate model. However, even with a smaller sample we took to run the model is fraud prediction was way higher at 8% compared to actual is fraud in the actual dataset at 0.58%. Logistic Regression would not be a good model for credit card fraud detection.
