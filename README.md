@@ -11,8 +11,6 @@ Online fraud has widespread business impacts and requires an effective end-to-en
 * This is a simulated credit card transaction dataset containing legitimate and fraud transactions from the duration 1st Jan 2019 - 31st Dec 2020. It covers credit cards of 1000 customers doing transactions with a pool of 800 merchants.
 This was generated using Sparkov Data Generation | Github tool created by Brandon Harris. This simulation was run for the duration - 1 Jan 2019 to 31 Dec 2020. The files were combined and converted into a standard format.
 
-## Analysis
-
 ## Communication Protocals 
 * Use Slack to ask any questions or concerns regarding the project. 
 * Let other members know if there is any scheduling conflict. 
@@ -30,11 +28,30 @@ This was generated using Sparkov Data Generation | Github tool created by Brando
 6. What areas do the company need to pay attention to in order to catch the detection?
 7. What machine learning works the best?
 
-## Machine Learning Models
+## Analysis
+The analysis begain researching credit card data sets. Kaggle provided a comprehensive data set that provided merchant locations, date of birth and gender of card members. The data was stored in a S3 bucket on AWS because the data was large. Jupyter notebook was used to clean data. The clean data csv was loaded into Google Colab to perform multiple machine learning models.
 
-### Logisical Regression
+An ERD was created from QuickDBD to assist in creating tables in the PgAdmin database. We were successful in connecting the tables through the ETL process from Colab to PgAdmin, however we werent able to run our machine learning models through the database.
 
-#### Random Oversampling
+### Machine Learning Models
+For machine learning our plan was to use unsupervised machine learning. However, since the data already included fraud information, we decided to use supervised learning instead. The clean data was loaded in using AWS S3 bucket. We took smaller samples of the dataset to run the machine learning models because the code would crash using the larger dataset. We used pd.get_dummies in order to include the columns that weren't intergers in our machine learning models. We then split the data to test and train.
+![image](https://user-images.githubusercontent.com/93438483/163692609-e5da04cb-b464-4f4d-98a0-ff640ecdfa12.png)
+
+#### Logistic Regression
+We used logistic regression model with various different types of preprocessing. We trained the data using Random Oversampling, SMOTE Oversampling, Undersampling, and Combination (Over and Under) Sampling.
+
+Logistic regression model analyzes the available data, and when presented with a new sample, mathematically determines its probability of belonging to a class. If the probability is above a certain cutoff point, the sample is assigned to that class. If the probability is less than the cutoff point, the sample is assigned to the other class.
+
+The advantages are:
+* Simple algorithm to implement
+* Efficient
+* Easy to update data
+
+The disadvantages are:
+* Can lead to overfitting with high dimensional datasets
+* Non linear information cannot be solved.
+
+##### Random Oversampling
 * The accuracy score was 87%. It matched with SMOTE and undersampling. 
 * It was a good model to run.
 * Connfusion Matrix:
@@ -46,7 +63,7 @@ This was generated using Sparkov Data Generation | Github tool created by Brando
 ![image](https://user-images.githubusercontent.com/93439516/162639023-975b0122-c787-4313-ab50-21e3b2de509c.png)
 
 
-#### SMOTE Oversampling
+##### SMOTE Oversampling
 * The accuracy score was 87%. It matched with Random oversampling and undersampling. 
 * It was a good model to run.
 * Connfusion Matrix:
@@ -57,7 +74,7 @@ This was generated using Sparkov Data Generation | Github tool created by Brando
 
 ![image](https://user-images.githubusercontent.com/93439516/162639059-73910ab6-1ef8-471b-9bf2-49a86f8adc87.png)
 
-#### Undersampling
+##### Undersampling
 * The accuracy score was 87%. It matched with SMOTE and Random Oversampling. 
 * It was a good model to run.
 * Connfusion Matrix:
@@ -69,7 +86,7 @@ This was generated using Sparkov Data Generation | Github tool created by Brando
 ![image](https://user-images.githubusercontent.com/93439516/162639095-939d474e-ed68-419c-986c-9b8e326a137f.png)
 
 
-#### Combination (Over and Under) Sampling
+##### Combination (Over and Under) Sampling
 * The accuracy score was 50%.
 * Connfusion Matrix:
 
@@ -79,7 +96,21 @@ This was generated using Sparkov Data Generation | Github tool created by Brando
 
 ![image](https://user-images.githubusercontent.com/93439516/162639158-0ff4445a-8613-405f-9819-493c98b869bb.png)
 
-### Balanced Random Forest Classifier
+#### Balanced Random Forest Classifier
+Random Forest algorithm will sample the data and build several smaller, simpler decision trees.
+
+The advantages are:
+* Are robust against overfitting as all of those weak learners are trained on different pieces of the data.
+* Can be used to rank the importance of input variables in a natural way.
+* Can handle thousands of input variables without variable deletion.
+* Are robust to outliers and nonlinear data.
+* Run efficiently on large datasets.
+
+The disadvantages are:
+* Creates a lot of trees and more computational power and resources are needed.
+* Longer training period
+
+Our results:
 * The accuracy score was 100%.
 * Connfusion Matrix:
 
