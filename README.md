@@ -19,20 +19,7 @@ This was generated using Sparkov Data Generation | Github tool created by Brando
 * Let other members know what changes you made and go over them to make sure they are correct. 
 * Work on the project on Monday and Wednesday together during or before class over zoom.
 * Meet again during the office hours to finish and review segment.   
-
-## Tableau Story
-
-*	Create a bar graph – Fraud and Non-fraud
-*	Create a graph depicting fraud done to women versus men
-*	Avg amount of fraud transaction
-*	Fraud transactions by category – to see if there is any correlation with certain categories
-*	Heat map by locations
-*	Most vulnerable age for cc fraud
-
-We want to show, with graphs, any patterns there may be. This will also be a great way to demonstrate what we were able to do with our machine learning model.  
-
-
-## Summary
+ 
 
 ## Questions they hope to answer with the data
 1. When should the credit card companies shut off a card when it detects fraud?
@@ -44,6 +31,8 @@ We want to show, with graphs, any patterns there may be. This will also be a gre
 7. What machine learning works the best?
 
 ## Machine Learning Models
+
+### Logisical Regression
 
 #### Random Oversampling
 * The accuracy score was 87%. It matched with SMOTE and undersampling. 
@@ -80,7 +69,6 @@ We want to show, with graphs, any patterns there may be. This will also be a gre
 ![image](https://user-images.githubusercontent.com/93439516/162639095-939d474e-ed68-419c-986c-9b8e326a137f.png)
 
 
-
 #### Combination (Over and Under) Sampling
 * The accuracy score was 50%.
 * Connfusion Matrix:
@@ -91,7 +79,7 @@ We want to show, with graphs, any patterns there may be. This will also be a gre
 
 ![image](https://user-images.githubusercontent.com/93439516/162639158-0ff4445a-8613-405f-9819-493c98b869bb.png)
 
-#### Balanced Random Forest Classifier
+### Balanced Random Forest Classifier
 * The accuracy score was 100%.
 * Connfusion Matrix:
 
@@ -100,3 +88,16 @@ We want to show, with graphs, any patterns there may be. This will also be a gre
 * Classification Report:
 
 ![image](https://user-images.githubusercontent.com/93439516/162639180-37f574cd-e2c4-49bc-ba57-a4ee6a66de7b.png)
+
+## Tableau Story
+
+*	Create a bar graph – Fraud and Non-fraud
+*	Create a graph depicting fraud done to women versus men
+*	Avg amount of fraud transaction
+*	Fraud transactions by category – to see if there is any correlation with certain categories
+*	Heat map by locations
+*	Most vulnerable age for cc fraud
+
+https://public.tableau.com/app/profile/charmiece.hollins/viz/CreditCardFraud-FinalProject/CreditCardFraudDetection
+
+## Summary
