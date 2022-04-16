@@ -100,6 +100,9 @@ This was generated using Sparkov Data Generation | Github tool created by Brando
 ![Dashboard page 2](https://user-images.githubusercontent.com/93438483/163690441-080e97dc-ee5a-442b-8673-6237f2c1d816.png)
 
 Below is the link to the Dashboard:
-https://public.tableau.com/app/profile/charmiece.hollins/viz/CreditCardFraud-FinalProject/CreditCardFraudDetection
+https://public.tableau.com/app/profile/charmiece.hollins/viz/CreditCardFraud-FinalProject/CreditCardFraudDetectionpg2
 
 ## Summary
+Our goal was to find a machine learning model that helped detect when credit card companies should shut off credit cards due to fraudulent activity. We use Balance Random Forest Classifier which gave us a 50% accuracy. This was not a good model due to the data showing less than 1% of the transactions being fraud. The second model we used was Logistic Regression. We preformed SMOTE, Combination (SMOTEEN), Undersampling and Random Oversampler. Logistic Regression with SMOTE preprocessing was our most accurate model. However, even with a smaller sample we took to run the model is fraud prediction was way higher at 8% compared to actual is fraud in the actual dataset at 0.58%. Logistic Regression would not be a good model for credit card fraud detection.
+
+From the analysis, ages 40 to 70 were the most targeted for fraud. Based on the number of transactions, men were targeted more than women for fraud. According to our dataset, more fraud transactions occured on the east coast versus the west coast. The areas that credit card companies should focus on are grocery stores and online shopping.
