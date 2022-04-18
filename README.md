@@ -131,6 +131,7 @@ Our results:
 *	Fraud transactions by category
 *	Heat map by locations
 *	Most vulnerable age for credit card fraud
+
 ![Dashboard page 1](https://user-images.githubusercontent.com/93438483/163690831-60de42fa-b391-4bb1-8332-5544c2781225.png)
 ![Dashboard page 2](https://user-images.githubusercontent.com/93438483/163690441-080e97dc-ee5a-442b-8673-6237f2c1d816.png)
 
