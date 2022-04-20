@@ -4,7 +4,7 @@
 Using Python and Machine learning, we plan to detect credit card fraud. As eCommerce sales rise, payment fraud continues to plague customers and merchants. We all have been targeted or known someone whose been targeted. It'll be interesting to know how the companies detect when this happens. Also to try and see how credit card companies detect fraudulent websites.
 Online fraud has widespread business impacts and requires an effective end-to-end strategy to prevent account takeover (ATO), deter new account fraud, and stop suspicious payment transactions.
 
-[Link to Presentation](https://github.com/Charmiece/Final-Project---CreditCard-Fraud/blob/main/Credit%20Card%20Fraud%20Detection%20slides.pdf)
+[Link to Presentation](https://github.com/Charmiece/Final-Project---CreditCard-Fraud/blob/main/Credit%20Card%20Fraud%20Detection%20Slideshow.pdf)
 
 ## Data Sources
 * fraudTest.csv
